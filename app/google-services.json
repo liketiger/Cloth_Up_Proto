@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1032510754768",
+    "firebase_url": "https://comin-1b4b9.firebaseio.com",
+    "project_id": "comin-1b4b9",
+    "storage_bucket": "comin-1b4b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032510754768:android:cb4c647c123eaa64bef3d5",
+        "android_client_info": {
+          "package_name": "com.liketiger.cloth_up"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032510754768-id73t3bp5l4eqo4smlqv8u5k1ckllhjq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.liketiger.cloth_up",
+            "certificate_hash": "91f0a89b155aa45f408b83e5d8f519fa4dba88ee"
+          }
+        },
+        {
+          "client_id": "1032510754768-arfrci6t10bgsgta73jldcnu4lkvcu6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHrIs1rGSimo67eaOExRpeo3vwc02gaI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032510754768-arfrci6t10bgsgta73jldcnu4lkvcu6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -25,6 +25,16 @@
 
     </androidx.viewpager.widget.ViewPager>
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="516dp"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/lechome"
+        android:src="@drawable/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/logo2_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoadingActivity">
-        </activity>
+
         <activity android:name=".GMapActivity">
         </activity>
         <activity android:name=".Zzim.ZzimActivity">
@@ -27,6 +26,15 @@
         </activity>
         <activity android:name=".Fragment.MarketInfo.MarketInfoActivity">
         </activity>
+        <activity android:name=".LoadingActivity"
+            android:theme="@style/SplashTheme">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity>
+
         <activity android:name=".LectureActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

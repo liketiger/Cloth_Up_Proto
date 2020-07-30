@@ -77,6 +77,11 @@ class MyCominActivity : AppCompatActivity() {
 
         }
 
+        myhome.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
 
 
 

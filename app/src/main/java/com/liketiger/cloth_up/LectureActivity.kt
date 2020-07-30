@@ -9,6 +9,7 @@ import com.google.android.material.tabs.TabLayout
 import com.liketiger.cloth_up.Fragment.ListFragment.FragmentAdapter
 import kotlinx.android.synthetic.main.activity_join.*
 import kotlinx.android.synthetic.main.activity_lecture.*
+import kotlinx.android.synthetic.main.activity_my_comin.*
 
 import kotlinx.android.synthetic.main.custom_tab.view.*
 
@@ -46,6 +47,10 @@ class LectureActivity : AppCompatActivity() {
             }
         })
 
+        lechome.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }

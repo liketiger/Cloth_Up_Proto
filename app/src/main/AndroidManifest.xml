@@ -2,20 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.liketiger.cloth_up">
 
-
-
-  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-<meta-data
-    android:name="com.kakao.sdk.AppKey"
-    android:value="{48789ebd824b13f3d454167de20c7042}" />
-
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo2"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo2_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".LoadingActivity">
+        </activity>
         <activity android:name=".GMapActivity">
         </activity>
         <activity android:name=".Zzim.ZzimActivity">
@@ -45,11 +40,16 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBnyk2V1DgwR-kIHsa_EAwVoO27mIu59Ek" />
     </application>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
-    </uses-permission>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <meta-data
+        android:name="com.kakao.sdk.AppKey"
+        android:value="{48789ebd824b13f3d454167de20c7042}" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
     </uses-permission>
 
 </manifest>

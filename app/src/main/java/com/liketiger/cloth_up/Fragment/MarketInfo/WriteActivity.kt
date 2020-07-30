@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.liketiger.cloth_up.LectureActivity
 import com.liketiger.cloth_up.MainActivity
 import com.liketiger.cloth_up.R
 import kotlinx.android.synthetic.main.activity_write.*
@@ -41,7 +42,7 @@ class WriteActivity : AppCompatActivity() {
             db.collection("reviews").add(form)
                 .addOnSuccessListener {
                     Toast.makeText(this, "성공", Toast.LENGTH_LONG).show()
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, LectureActivity::class.java)
                     startActivity(intent)
 
                     finish()

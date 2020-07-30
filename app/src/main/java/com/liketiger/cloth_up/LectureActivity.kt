@@ -9,7 +9,7 @@ import com.google.android.material.tabs.TabLayout
 import com.liketiger.cloth_up.Fragment.ListFragment.FragmentAdapter
 import kotlinx.android.synthetic.main.activity_join.*
 import kotlinx.android.synthetic.main.activity_lecture.*
-import kotlinx.android.synthetic.main.activity_lecture.home_button
+
 import kotlinx.android.synthetic.main.custom_tab.view.*
 
 class LectureActivity : AppCompatActivity() {
@@ -21,12 +21,12 @@ class LectureActivity : AppCompatActivity() {
         val fragmentAdapter = FragmentAdapter(supportFragmentManager)
         list_viewpager.adapter = fragmentAdapter
 
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("남성")))
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("여성")))
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("브랜드")))
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("빈티지")))
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("악세사리")))
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("신상")))
+        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("MAN")))
+        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("WOMAN")))
+        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("VINTAGE")))
+        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("BRAND")))
+        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("SALE")))
+        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("ETC")))
 
         list_viewpager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tab_layout))
 
@@ -46,10 +46,7 @@ class LectureActivity : AppCompatActivity() {
             }
         })
 
-        home_button.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
+
 
     }
 

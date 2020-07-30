@@ -13,7 +13,7 @@ import com.liketiger.cloth_up.R
 import com.liketiger.cloth_up.Utils.FirebaseUtils
 import kotlinx.android.synthetic.main.activity_lecture.*
 import kotlinx.android.synthetic.main.activity_market_info.*
-import kotlinx.android.synthetic.main.activity_market_info.home_button
+
 
 class MarketInfoActivity : AppCompatActivity() {
 
@@ -32,7 +32,7 @@ class MarketInfoActivity : AppCompatActivity() {
             .get()
             .addOnSuccessListener { documentSnapshot ->
                 if(documentSnapshot.get(intent.getStringExtra("title").toString()) == true){
-                    header_zzim.text="찜 해제"
+                    header_zzim.text="즐찾취소"
                     header_zzim.setTextColor(Color.BLUE)
                 }
             }
@@ -44,9 +44,9 @@ class MarketInfoActivity : AppCompatActivity() {
 
         zzim.setOnClickListener {
 
-            if(header_zzim.text.equals("찜 해제")){
+            if(header_zzim.text.equals("즐찾취소")){
 
-                header_zzim.text="찜 하기"
+                header_zzim.text="즐찾하기"
                 header_zzim.setTextColor(Color.RED)
 
                 FirebaseUtils.db
@@ -61,7 +61,7 @@ class MarketInfoActivity : AppCompatActivity() {
                     }
 
             }else{
-                header_zzim.text="찜 해제"
+                header_zzim.text="즐찾취소"
                 header_zzim.setTextColor(Color.BLUE)
 
                 FirebaseUtils.db
@@ -101,9 +101,6 @@ class MarketInfoActivity : AppCompatActivity() {
             figure_3.setTextSize(TypedValue.COMPLEX_UNIT_DIP,20F)
             supportFragmentManager.beginTransaction().replace(R.id.fragment_area, ReviewFragment()).commit()
         }
-        home_button.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
+
     }
 }

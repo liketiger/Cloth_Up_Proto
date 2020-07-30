@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
                 password_area.text.toString()
             ).addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, MyCominActivity::class.java)
                     startActivity(intent)
                 } else {
                     Toast.makeText(this, "잘못된 정보입니다", Toast.LENGTH_LONG).show()

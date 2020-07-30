@@ -34,15 +34,15 @@ class FirstFragment : Fragment() {
 
         val list_array = arrayListOf<ContentsListModel>(
 
-            ContentsListModel(R.drawable.list1, "채원매장", 1, "보세"),
-            ContentsListModel(R.drawable.list2, "보세랜드", 1, "보세"),
-            ContentsListModel(R.drawable.list3, "서핑랜드", 1, "스포츠"),
-            ContentsListModel(R.drawable.list4, "등산업", 1, "스포츠"),
-            ContentsListModel(R.drawable.list5, "빈폴", 1, "브랜드"),
-            ContentsListModel(R.drawable.list6, "황갤러리", 1, "잡화"),
-            ContentsListModel(R.drawable.list7, "MyStyle", 1, "빈티지"),
-            ContentsListModel(R.drawable.list8, "빈티지월드", 1, "빈티지"),
-            ContentsListModel(R.drawable.list9, "브세", 1, "보랜드")
+            ContentsListModel(R.drawable.ceo1, "채원매장", 1, "보세"),
+            ContentsListModel(R.drawable.ceo2, "보세랜드", 1, "보세"),
+            ContentsListModel(R.drawable.ceo3, "서핑랜드", 1, "스포츠"),
+            ContentsListModel(R.drawable.ceo4, "등산업", 1, "스포츠"),
+            ContentsListModel(R.drawable.ceo5, "빈폴", 1, "브랜드"),
+            ContentsListModel(R.drawable.ceo6, "황갤러리", 1, "잡화"),
+            ContentsListModel(R.drawable.ceo7, "MyStyle", 1, "빈티지"),
+            ContentsListModel(R.drawable.ceo8, "빈티지월드", 1, "빈티지"),
+            ContentsListModel(R.drawable.ceo9, "브세", 1, "보랜드")
         )
 
         val list_adapter = FirstFragAdapter(requireContext(), list_array)

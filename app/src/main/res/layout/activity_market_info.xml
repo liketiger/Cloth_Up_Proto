@@ -17,7 +17,7 @@
         android:textSize="30dp"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:text="매장A"/>
+        android:text="채원매장"/>
 
 
     <TextView
@@ -94,7 +94,7 @@
             android:id="@+id/header_zzim"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_width="match_parent"
-            android:text="찜 하기"
+            android:text="즐찾하기"
             android:textColor="#FF0000"
             android:gravity="center"
             android:layout_marginTop="10dp"
@@ -164,18 +164,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
- <de.hdodenhof.circleimageview.CircleImageView
-     android:id="@+id/home_button"
-     android:layout_width="150dp"
-     android:layout_height="150dp"
-     android:layout_margin="10dp"
-     android:src="@drawable/home"
-     app:layout_constraintBottom_toBottomOf="parent"
-     app:layout_constraintEnd_toEndOf="parent"
-     app:layout_constraintHorizontal_bias="1.0"
-     app:layout_constraintStart_toStartOf="parent"
-     app:layout_constraintTop_toBottomOf="@+id/content_area"
-     app:layout_constraintVertical_bias="0.943" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
